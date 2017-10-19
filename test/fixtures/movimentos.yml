@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  valor: 1.5
+  descricao: MyString
+  fluxo_id: 1
+  categoria_id: 1
+
+two:
+  valor: 1.5
+  descricao: MyString
+  fluxo_id: 1
+  categoria_id: 1
