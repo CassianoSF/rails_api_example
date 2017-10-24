@@ -16,7 +16,6 @@ class LancamentosController < AuthenticatedController
   # POST /lancamentos
   def create
     @lancamento = current_user.lancamentos.new(lanecamento_params)
-    binding.pry
 
     if @lancamento.save
       render json: @lancamento, status: :created, location: @lancamento
@@ -47,6 +46,6 @@ class LancamentosController < AuthenticatedController
     
     # Only allow a trusted parameter "white list" through.
     def lanecamento_params
-      params.require(:lancamento).permit(:valor, :descricao, :categoria, :tipo)
+      params.require(:lancamento).permit(:valor, :descricao, :categoria_id, :tipo)
     end
 end

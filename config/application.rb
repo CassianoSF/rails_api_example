@@ -22,9 +22,9 @@ module Api
       allow do
         origins '*'
         resource '*',
-          :headers => :any,
-          :expose  => ['access-token', 'expiry', 'token-type', 'uid', 'client'],
-          :methods => [:get, :post, :options, :delete, :put]
+          headers: :any,
+          expose: ['access-token', 'token-type', 'client', 'expiry', 'uid'],
+          methods: [:get, :post, :put, :patch, :delete, :options, :head]
       end
     end
     config.api_only = true
