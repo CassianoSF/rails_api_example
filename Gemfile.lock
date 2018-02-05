@@ -124,6 +124,9 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
+    seed_dump (3.2.4)
+      activerecord (>= 4)
+      activesupport (>= 4)
     slop (3.6.0)
     spring (2.0.2)
       activesupport (>= 4.2)
@@ -161,6 +164,7 @@ DEPENDENCIES
   puma (~> 3.0)
   rack-cors
   rails (~> 5.0.2)
+  seed_dump
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
